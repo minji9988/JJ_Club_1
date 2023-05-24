@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.HomeFragment">
+
+    <TextView
+        android:text="스터디/동아리."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="48dp"
+        android:textColor="#3c3c3c"
+        android:textSize="28sp"/>
+
+    <ImageButton
+        android:id="@+id/btn_magnifying_glass_main_page"
+        android:layout_marginLeft="299.2dp"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/magnifying_glass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <ImageButton
+        android:id="@+id/btn_bell_main_page"
+        android:layout_marginLeft="359.6dp"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/bell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+        android:text="인기글"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="448dp"
+        android:textColor="#3c3c3c"
+        android:textSize="25sp"/>
+
+    <ImageButton
+        android:layout_marginTop="150dp"
+        android:background="#939393"
+        android:layout_width="428dp"
+        android:layout_height="226dp"/>
+
+
+    <TextView
+        android:id="@+id/btn_more_popular_posts"
+        android:text="더보기"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="345dp"
+        android:layout_marginTop="455.8dp"
+        android:textColor="#aaaaaa"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:text="최신글"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="800dp"
+        android:textColor="#3c3c3c"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/btn_more_latest_posts"
+        android:text="더보기"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="345dp"
+        android:layout_marginTop="807.8dp"
+        android:textColor="#aaaaaa"
+        android:textSize="15sp"/>
+
+
+
+</FrameLayout>

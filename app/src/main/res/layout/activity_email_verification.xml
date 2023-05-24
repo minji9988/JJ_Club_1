@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.EmailVerificationActivity">
+
+
+    <TextView
+        android:text="회원가입"
+        android:layout_marginTop="74dp"
+        android:layout_marginLeft="42dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColor="#3c3c3c"
+        />
+
+    <TextView
+        android:text="이메일"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="199dp"
+        android:textSize="16sp"
+        android:textColor="#707070"
+        />
+
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:hint="이메일을 입력해 주세요"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="233dp"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:textSize="18sp"
+        android:textColor="#3c3c3c"
+        android:textColorHint="#d6d6d6"
+        android:paddingStart="20dp"
+        android:background="@drawable/shadow"
+        />
+
+    <android.widget.Button
+        android:text="인증"
+        android:id="@+id/sendVerificationButton"
+        android:layout_marginLeft="316dp"
+        android:layout_marginTop="251dp"
+        android:layout_width="52dp"
+        android:layout_height="34dp"
+        android:background="@drawable/btn_round_blue_box"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        />
+
+    <TextView
+        android:text="이메일 인증번호"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="333dp"
+        android:textSize="16sp"
+        android:textColor="#707070"
+        />
+
+
+    <EditText
+        android:id="@+id/verificationCodeEditText"
+        android:hint="인증번호를 입력해 주세요"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="367dp"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:textSize="18sp"
+        android:textColor="#3c3c3c"
+        android:textColorHint="#d6d6d6"
+        android:paddingStart="20dp"
+        android:background="@drawable/shadow"
+        />
+
+    <android.widget.Button
+        android:text="확인"
+        android:id="@+id/verifyButton"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="505dp"
+        android:layout_width="344dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_round_blue_box"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        />
+
+
+</RelativeLayout>
+
+
