@@ -25,28 +25,14 @@ public interface EmailVerificationInterface {
 
         @POST("/api/v1/auth/verifyCode")
         Call<EmailConfirmationResponse> verifyEmail( @Body EmailConfirmationRequest request);
+
+        @POST("/api/v1/auth/refreshCode")
+        Call<EmailVerificationResponse> refreshVerificationCode( @Body EmailVerificationRequest request);
+
 }
 
 
-//
-//        @FormUrlEncoded
-//        @POST("/api/v1/auth/email") // 이메일 인증을 처리하는 서버 API 엔드포인트
-//        Call<Void> sendVerificationEmail(@Body String request); // 서버로 이메일 인증 요청을 보내는 역할,
-//
-//        @POST("complete-registration")
-//        @FormUrlEncoded
-//        Call<Void> completeRegistration(@Field("verificationCode") String verificationCode);
-//
-//        // verificationCode라는 필드를 가진 POST 요청을 보내는 역할을 함
-//
-
-/*각 메서드는 @POST 어노테이션을 통해 HTTP POST 요청을 수행하고,
-필요한 매개변수를 @Field 어노테이션을 사용하여 전달합니다.
-응답은 Call<Void> 타입으로 받습니다.*/
-
-
 /*
-## Call<Void> sendVerificationEmail(@Body EmailVerificationRequest request); 설명 ##
 
 sendVerificationEmail 메서드는 서버로 이메일 인증 요청을 보내는 역할을 합니다.
 이 때 @Body 어노테이션은 EmailVerificationRequest라는 객체를 전달한다는 의미입니다.
