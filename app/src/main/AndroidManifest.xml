@@ -1,30 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
-
     <!-- retrofit 통신을 위해 internet permission 추가 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <!--
+
    1카메라 권한 허용과
    2앱에 대한 명세
-   -->
+    -->
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-feature android:name="android.hardware.camera.any" />
 
+    <uses-feature android:name="android.hardware.camera.any" />
 
     <application
         android:allowBackup="true"
-        android:usesCleartextTraffic="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.JJ_Club"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".activities.MBTI.MbtiTestQ12Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MBTI.MbtiTestQ11Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MBTI.MbtiTestQ10Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MBTI.MbtiTestQ9Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MBTI.MbtiTestQ8Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MBTI.MbtiTestQ7Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MBTI.MbtiTestQ6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MBTI.MbtiTestQ5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MBTI.MbtiTestQ4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MBTI.MbtiTestQ3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MBTI.MbtiTestQ2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MBTI.MbtiTestQ1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MBTI.entp"
+            android:exported="false" />
         <activity
             android:name=".Home.FilterActivity"
             android:exported="false" />
@@ -61,42 +98,30 @@
         <activity
             android:name=".activities.SignUpActivity"
             android:exported="false" />
-
         <activity
             android:name=".EmailVerificationManager"
             android:exported="false" />
-
-
         <activity
             android:name=".activities.SplashActivity"
             android:exported="false" />
-
         <activity
             android:name=".activities.MainActivity"
             android:exported="false" />
-
-
-
         <activity
             android:name=".activities.MainPageActivity"
             android:exported="false" />
-
         <activity
             android:name=".activities.EmailVerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MBTI.MbtiTestStart"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-
-
-
-
-
-
-</application>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
 
 </manifest>

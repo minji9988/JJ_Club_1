@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <android.widget.Button
+        android:layout_width="344dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="579dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="168dp"
+        android:background="@drawable/btn_round_blue_box"
+        android:text="둘이 돼. 슬픈 사람이 두 명이 되니까"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewType"
+        android:layout_width="252dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="399dp"
+        android:lineSpacingExtra="9sp"
+        android:text="슬픔을 나누면 어떻게 될까요?"
+        android:textColor="#3c3c3c"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="59dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="14sp"
+        android:text="Q8"
+        android:textColor="#1c7eff"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <android.widget.Button
+        android:id="@+id/button_login"
+        android:layout_width="344dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="579dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="248dp"
+        android:background="@drawable/btn_round_blue_box"
+        android:text="반이 돼. 슬픔은 공유해야지!"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

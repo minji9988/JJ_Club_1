@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="302dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="399dp"
+        android:lineSpacingExtra="9sp"
+        android:text="갔다 온 후 후기를 이야기한다면?"
+        android:textColor="#3c3c3c"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <android.widget.Button
+        android:layout_width="344dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="579dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="168dp"
+        android:background="@drawable/btn_round_blue_box"
+        android:text="분위기 엄청 좋아! 직관이 짱이더라."
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewType"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="267dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="399dp"
+        android:lineSpacingExtra="9sp"
+        android:text="좋아하는 연예인 콘서트를"
+        android:textColor="#3c3c3c"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="59dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="14sp"
+        android:text="Q6"
+        android:textColor="#1c7eff"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <android.widget.Button
+        android:id="@+id/button_login"
+        android:layout_width="344dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="579dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="248dp"
+        android:background="@drawable/btn_round_blue_box"
+        android:text="게스트로 누가 나오고, 노래는 이거 부르고"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>
