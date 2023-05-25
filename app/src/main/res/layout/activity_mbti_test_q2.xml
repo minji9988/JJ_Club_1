@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="301dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="399dp"
+        android:lineSpacingExtra="9sp"
+        android:text="어떤 유형의 취미가 더 끌리나요?"
+        android:textColor="#3c3c3c"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <android.widget.Button
+        android:layout_width="344dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="579dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="168dp"
+        android:background="@drawable/btn_round_blue_box"
+        android:text="일단 사람 많은 동호회지!"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewType"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="266dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="399dp"
+        android:lineSpacingExtra="9sp"
+        android:text="취미 생활을 한다면"
+        android:textColor="#3c3c3c"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="59dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="14sp"
+        android:text="Q2"
+        android:textColor="#1c7eff"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <android.widget.Button
+        android:id="@+id/button_login"
+        android:layout_width="344dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="579dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="248dp"
+        android:background="@drawable/btn_round_blue_box"
+        android:text="혼자할 수 있는 취미생활이 편해"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>
