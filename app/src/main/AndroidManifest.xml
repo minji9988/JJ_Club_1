@@ -8,8 +8,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <!--
-   1카메라 권한 허용과
-   2앱에 대한 명세
+   1카메라 권한 허용과 2앱에 대한 명세
    -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera.any" />
@@ -26,75 +25,62 @@
         android:theme="@style/Theme.JJ_Club"
         tools:targetApi="31">
         <activity
-            android:name=".Home.FilterActivity"
+            android:name=".activities.mainpage.FilterActivity"
             android:exported="false" />
         <activity
-            android:name=".Home.SearchActivity"
+            android:name=".activities.mainpage.SearchActivity"
             android:exported="false" />
         <activity
-            android:name=".Profile.ProfileRecivedapplicationformActivity2"
+            android:name=".activities.Profile.ProfileRecivedapplicationformActivity2"
             android:exported="false" />
         <activity
-            android:name=".Profile.ProfileSendapplicationformActivity2"
+            android:name=".activities.Profile.ProfileSendapplicationformActivity2"
             android:exported="false" />
         <activity
-            android:name=".Profile.ProfileRecivedapplicationformActivity"
+            android:name=".activities.Profile.ProfileRecivedapplicationformActivity"
             android:exported="false" />
         <activity
-            android:name=".Profile.ProfileSendapplicationformActivity"
+            android:name=".activities.Profile.ProfileSendapplicationformActivity"
             android:exported="false" />
         <activity
-            android:name=".Profile.ProfileWirtepostActivity"
+            android:name=".activities.Profile.ProfileWirtepostActivity"
             android:exported="false" />
         <activity
-            android:name=".Profile.ProfileLoveitActivity"
+            android:name=".activities.Profile.ProfileLoveitActivity"
             android:exported="false" />
         <activity
-            android:name=".Profile.ProfileAlarmActivity"
+            android:name=".activities.Profile.ProfileAlarmActivity"
             android:exported="false" />
         <activity
-            android:name=".Profile.ProfileEditActivity"
+            android:name=".activities.Profile.ProfileEditActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.PopularPostsActivity"
+            android:name=".activities.mainpage.PopularPostsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.SignUpActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".EmailVerificationManager"
-            android:exported="false" />
-
-
-        <activity
-            android:name=".activities.SplashActivity"
+            android:name=".activities.register.SignUpActivity"
             android:exported="false" />
 
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.register.SplashActivity"
             android:exported="false" />
 
-
-
         <activity
-            android:name=".activities.MainPageActivity"
+            android:name=".activities.register.MainActivity"
             android:exported="true" >
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
-        </activity>
+    </activity>
 
         <activity
-            android:name=".activities.EmailVerificationActivity"
-            android:exported="false"/>
+            android:name=".activities.mainpage.MainPageActivity"
+            android:exported="true" />
 
 
 
 
-        
-    </application>
 
 </manifest>

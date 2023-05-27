@@ -1,4 +1,4 @@
-package com.example.jj_club.Home;
+package com.example.jj_club.activities.mainpage;
 
 import androidx.appcompat.app.AppCompatActivity;
 

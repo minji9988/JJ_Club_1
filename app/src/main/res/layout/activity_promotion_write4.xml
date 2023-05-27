@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:visibility="visible"
-    tools:context=".PromotionWrite4">
+    tools:context=".activities.promotion.PromotionWrite4">
 
     <TextView
         android:id="@+id/textView5"
