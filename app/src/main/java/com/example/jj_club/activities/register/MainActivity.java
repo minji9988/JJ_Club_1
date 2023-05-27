@@ -1,4 +1,4 @@
-package com.example.jj_club.activities;
+package com.example.jj_club.activities.register;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.jj_club.R;
+import com.example.jj_club.activities.mainpage.MainPageActivity;
 import com.example.jj_club.network.RetrofitClient;
 import com.example.jj_club.network.LoginInterface;
 import com.example.jj_club.models.request.LoginRequest;

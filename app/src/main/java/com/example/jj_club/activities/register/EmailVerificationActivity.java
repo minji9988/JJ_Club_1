@@ -1,4 +1,4 @@
-package com.example.jj_club.activities;
+package com.example.jj_club.activities.register;
 
 import androidx.appcompat.app.AppCompatActivity;
 
