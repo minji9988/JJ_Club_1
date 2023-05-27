@@ -9,7 +9,6 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.jj_club.R;
-import com.example.jj_club.activities.MBTI.MbtiTestQ2Activity;
 
 public class MbtiTestQ1Activity extends AppCompatActivity {
 

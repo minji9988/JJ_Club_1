@@ -28,7 +28,7 @@ public class MbtiTestQ3Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // 버튼1이 클릭되었을 때 mbti_test_q2.xml 페이지로 이동
-                Intent intent = new Intent(MbtiTestQ3Activity.this, MbtiTestQ4Activity.class);
+                Intent intent = new Intent(MbtiTestQ3Activity.this, com.example.jj_club.activities.MBTI.MbtiTestQ4Activity.class);
                 startActivity(intent);
             }
         });
@@ -37,7 +37,7 @@ public class MbtiTestQ3Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // 버튼2가 클릭되었을 때 mbti_test_q2.xml 페이지로 이동
-                Intent intent = new Intent(MbtiTestQ3Activity.this, MbtiTestQ4Activity.class);
+                Intent intent = new Intent(MbtiTestQ3Activity.this, com.example.jj_club.activities.MBTI.MbtiTestQ4Activity.class);
                 startActivity(intent);
             }
         });
