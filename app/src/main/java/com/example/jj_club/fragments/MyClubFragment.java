@@ -1,65 +1,43 @@
 package com.example.jj_club.fragments;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
-import android.widget.Toast;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.jj_club.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MyClubFragment extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_my_club);
-
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        bottomNavigationView.setOnNavigationItemSelectedListener(navItemSelectedListener);
-
-        // 초기 화면으로 "내모임" 프래그먼트를 표시
-        //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MyClubFragment()).commit();
-    }
+public class MyClubFragment extends Fragment {
 
     private BottomNavigationView.OnNavigationItemSelectedListener navItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
-                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                public
+                boolean onNavigationItemSelected ( @NonNull MenuItem item ) {
                     Fragment selectedFragment = null;
 
-                    switch (item.getItemId()) {
-                        case R.id.vector_home:
-                            // "홈" 선택 시 처리할 내용
-                            selectedFragment = new HomeFragment();
-                            getSupportFragmentManager().beginTransaction()
-                                    .replace(R.id.fragment_container, selectedFragment)
-                                    .commit();
-                            break;
-
-                        case R.id.vector_myClub:
-                            // "내모임" 선택 시 처리할 내용
-                            selectedFragment = new Fragment();
-                            getSupportFragmentManager().beginTransaction()
-                                    .replace(R.id.fragment_container, selectedFragment)
-                                    .commit();
-                            break;
-
-                        case R.id.vector_profile:
-                            // "프로필" 선택 시 처리할 내용
-                            selectedFragment = new ProfileFragment();
-                            getSupportFragmentManager().beginTransaction()
-                                    .replace(R.id.fragment_container, selectedFragment)
-                                    .commit();
-                            break;
+                    int itemId = item.getItemId();
+                    if (itemId == R.id.vector_home) {
+                        selectedFragment = new HomeFragment();
+                    } else if (itemId == R.id.vector_myClub) {
+                        selectedFragment = new MyClubFragment();
+                    } else if (itemId == R.id.vector_profile) {
+                        selectedFragment = new ProfileFragment();
                     }
 
                     if (selectedFragment != null) {
-                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                                selectedFragment).commit();
+                        FragmentManager fragmentManager = getParentFragmentManager();
+                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                        fragmentTransaction.replace(R.id.fragment_container, selectedFragment);
+                        fragmentTransaction.commit();
                         return true;
                     }
 

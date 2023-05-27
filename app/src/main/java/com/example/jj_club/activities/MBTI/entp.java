@@ -9,7 +9,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.jj_club.R;
-import com.example.jj_club.activities.MainActivity;
+import com.example.jj_club.activities.register.MainActivity;
 
 public class entp extends AppCompatActivity {
 

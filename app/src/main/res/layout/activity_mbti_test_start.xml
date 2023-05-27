@@ -14,7 +14,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="9dp"
         android:layout_marginEnd="45dp"
-        app:srcCompat="@drawable/curious_cuate" />
+        app:srcCompat="@drawable/arrow_left" />
 
     <TextView
         android:id="@+id/textView5"
