@@ -15,13 +15,13 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.example.jj_club.Profile.ProfileAlarmActivity;
-import com.example.jj_club.Profile.ProfileEditActivity;
-import com.example.jj_club.Profile.ProfileLoveitActivity;
-import com.example.jj_club.Profile.ProfileRecivedapplicationformActivity;
-import com.example.jj_club.Profile.ProfileSendapplicationformActivity;
-import com.example.jj_club.Profile.ProfileWirtepostActivity;
-import com.example.jj_club.activities.MainActivity;
+import com.example.jj_club.activities.Profile.ProfileAlarmActivity;
+import com.example.jj_club.activities.Profile.ProfileEditActivity;
+import com.example.jj_club.activities.Profile.ProfileLoveitActivity;
+import com.example.jj_club.activities.Profile.ProfileRecivedapplicationformActivity;
+import com.example.jj_club.activities.Profile.ProfileSendapplicationformActivity;
+import com.example.jj_club.activities.Profile.ProfileWirtepostActivity;
+import com.example.jj_club.activities.register.MainActivity;
 ////////////////////프로필 페이지///////////////////
 
 /**
