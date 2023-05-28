@@ -36,6 +36,9 @@ android {
 
 dependencies {
 
+    // recyclerview 추가
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+
     // retrofit2 추가
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     // Gson: api 리턴 값이 json 형태로 들어와서 파싱을 위해 추가
@@ -50,4 +53,5 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
 }
