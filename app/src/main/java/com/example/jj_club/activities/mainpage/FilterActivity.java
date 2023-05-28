@@ -1,14 +1,16 @@
-package com.example.jj_club;
+package com.example.jj_club.activities.mainpage;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class PromotionWrite4 extends AppCompatActivity {
+import com.example.jj_club.R;
+
+public class FilterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_promotion_write4);
+        setContentView(R.layout.activity_filter);
     }
 }
