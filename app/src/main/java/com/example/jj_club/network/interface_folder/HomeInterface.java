@@ -1,4 +1,6 @@
-package com.example.jj_club.network;
+package com.example.jj_club.network.interface_folder;
+
+import com.example.jj_club.network.HomePostItem;
 
 import java.util.List;
 

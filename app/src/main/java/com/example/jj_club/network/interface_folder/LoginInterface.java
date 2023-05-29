@@ -1,4 +1,4 @@
-package com.example.jj_club.network;
+package com.example.jj_club.network.interface_folder;
 
 
 // ApiService 파일에 대한 설명

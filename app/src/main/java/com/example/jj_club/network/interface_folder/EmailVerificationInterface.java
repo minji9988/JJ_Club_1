@@ -1,4 +1,4 @@
-package com.example.jj_club.network;
+package com.example.jj_club.network.interface_folder;
 
 import com.example.jj_club.models.request.EmailConfirmationRequest;
 import com.example.jj_club.models.response.EmailConfirmationResponse;

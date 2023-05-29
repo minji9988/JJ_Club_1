@@ -15,7 +15,7 @@ import android.widget.Toast;
 import com.example.jj_club.R;
 import com.example.jj_club.activities.mainpage.MainPageActivity;
 import com.example.jj_club.network.RetrofitClient;
-import com.example.jj_club.network.LoginInterface;
+import com.example.jj_club.network.interface_folder.LoginInterface;
 import com.example.jj_club.models.request.LoginRequest;
 import com.example.jj_club.models.response.LoginResponse;
 

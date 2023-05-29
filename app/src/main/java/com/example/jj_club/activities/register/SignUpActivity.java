@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.jj_club.R;
 import com.example.jj_club.network.RetrofitClient;
-import com.example.jj_club.network.SignUpInterface;
+import com.example.jj_club.network.interface_folder.SignUpInterface;
 import com.example.jj_club.models.request.SignUpRequest;
 import com.example.jj_club.models.response.SignUpResponse;
 

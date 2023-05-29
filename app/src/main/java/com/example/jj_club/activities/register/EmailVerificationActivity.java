@@ -19,7 +19,7 @@ import retrofit2.Retrofit;
 
 import com.example.jj_club.R;
 import com.example.jj_club.network.RetrofitClient;
-import com.example.jj_club.network.EmailVerificationInterface;
+import com.example.jj_club.network.interface_folder.EmailVerificationInterface;
 import com.example.jj_club.models.request.EmailConfirmationRequest;
 import com.example.jj_club.models.response.EmailConfirmationResponse;
 import com.example.jj_club.models.response.EmailVerificationErrorResponse;

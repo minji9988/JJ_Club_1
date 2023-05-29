@@ -1,9 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.mainpage.HomeSameMbtiPostsActivity">
+    tools:context=".activities.mainpage.HomePopularPostsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- 스터디/동아리와 돋보기 아이콘, 알림 아이콘을 가로로 나란히 배치한 LinearLayout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_back_popular_posts"
+            android:background="@drawable/arrow_left"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="42dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="내 MBTI와 똑같은 모임"
+            android:layout_marginTop="127dp"
+            android:layout_marginLeft="42dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#3c3c3c"
+            />
+
+        <!-- 돋보기 아이콘 -->
+        <ImageButton
+            android:id="@+id/btn_magnifying_glass_main_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/magnifying_glass"
+            android:layout_marginTop="51dp"
+            android:layout_marginLeft="299.2dp" />
+
+        <!-- 알림 아이콘 -->
+        <ImageButton
+            android:id="@+id/btn_bell_main_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bell"
+            android:layout_marginTop="47.4dp"
+            android:layout_marginLeft="359.6dp" />
+
+        <!-- 필터 아이콘 -->
+        <ImageButton
+            android:id="@+id/btn_filter_main_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vector_filter"
+            android:layout_marginLeft="359dp"
+            android:layout_marginTop="133dp"
+            />
+
+    </RelativeLayout>
+
+
+</ScrollView>
