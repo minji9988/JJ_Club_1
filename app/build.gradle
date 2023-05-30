@@ -47,6 +47,9 @@ dependencies {
     // OkHttp3: 이메일 인증을 위해 추가
     implementation 'com.squareup.okhttp3:okhttp:4.9.1'
 
+    // 이미지 로드를 위해 추가
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
