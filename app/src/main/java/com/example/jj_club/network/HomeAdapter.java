@@ -7,7 +7,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.jj_club.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -37,9 +39,8 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder
     // onCreateViewHolder 메서드 오버라이드
     @Override
     public HomeViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        // 레이아웃 인플레이션을 통해 아이템 뷰 생성
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_home, parent, false);
-        // ViewHolder 객체 생성 후 반환
+        // 각 아이템에 대한 레이아웃 인플레이션
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_home_item, parent, false);
         return new HomeViewHolder(itemView);
     }
 
@@ -48,9 +49,8 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder
     public void onBindViewHolder(HomeViewHolder holder, int position) {
         // 데이터 리스트에서 해당 position의 아이템 가져오기
         HomePostItem postItem = postItemList.get(position);
-        // 이미지 로딩은 Picasso나 Glide와 같은 라이브러리를 사용하면 편리합니다.
-        // 이미지 라이브러리를 사용하지 않는다면 직접 이미지를 로드하여 설정해주어야 합니다.
-        // Picasso.get().load(postItem.getImageUrl()).into(holder.imageView);
+        // Picasso를 사용해 이미지를 로드하고 imageView에 설정
+        Picasso.get().load(postItem.getImageUrl()).placeholder(R.drawable.gray_rectangle).into(holder.imageView);
         holder.title.setText(postItem.getTitle()); // 아이템의 제목 설정
         holder.date.setText(postItem.getDate()); // 아이템의 날짜 설정
     }
@@ -60,5 +60,11 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder
     public int getItemCount() {
         // 아이템 리스트의 크기 반환
         return postItemList.size();
+    }
+
+    // 새로운 데이터로 갱신하고 RecyclerView에 알리는 메서드
+    public void updateData(List<HomePostItem> newPostItemList) {
+        postItemList = newPostItemList;
+        notifyDataSetChanged();
     }
 }

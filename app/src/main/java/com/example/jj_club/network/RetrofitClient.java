@@ -15,7 +15,7 @@ public class RetrofitClient {
 
     private static Retrofit retrofit; //Retrofit 인스턴스를 저장하는 정적 변수
 
-    private RetrofitClient() {
+    public RetrofitClient() {
 //        private으로 선언되어 있어 외부에서의 인스턴스 생성을 막음
 //        외부에서 인스턴스를 직접 생성하지 못하도록 제한하기 위해 작성.
     }
