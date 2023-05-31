@@ -103,13 +103,39 @@
     <android.widget.Button
         android:id="@+id/button_next"
         android:layout_width="77dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="42dp"
         android:layout_marginRight="33dp"
         android:background="@drawable/btn_round_blue_box"
         android:text="다음"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <android.widget.Button
+        android:id="@+id/button_always"
+        android:layout_width="136dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="748dp"
+        android:layout_marginLeft="42dp"
+        android:background="@drawable/btn_round_blue_box"
+        android:text="상시 모집"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <android.widget.Button
+        android:id="@+id/button_calendar"
+        android:layout_width="136dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="748dp"
+        android:background="@drawable/btn_round_blue_box"
+        android:text="기간 선택"
         android:textColor="#ffffff"
         android:textSize="18sp" />
 
@@ -144,7 +170,7 @@
         android:background="@drawable/btn_round_blue_box"></View>
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/pwtitle"
         android:layout_width="344dp"
         android:layout_height="70dp"
         android:layout_alignParentTop="true"
@@ -160,7 +186,7 @@
         android:background="@drawable/edittext_rounded_corner_rectangle" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/pwname"
         android:layout_width="344dp"
         android:layout_height="70dp"
         android:layout_alignParentTop="true"
@@ -176,7 +202,7 @@
         android:textColor="#29000000" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/pwinterview"
         android:layout_width="344dp"
         android:layout_height="70dp"
         android:layout_alignParentTop="true"
@@ -192,7 +218,7 @@
         android:textColor="#29000000" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/pwfee"
         android:layout_width="344dp"
         android:layout_height="70dp"
         android:layout_alignParentTop="true"
@@ -205,22 +231,6 @@
         android:ems="10"
         android:inputType="text"
         android:text="회비를 입력해 주세요."
-        android:textColor="#29000000" />
-
-    <EditText
-        android:id="@+id/editTextText5"
-        android:layout_width="344dp"
-        android:layout_height="70dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="748dp"
-        android:layout_marginLeft="42dp"
-        android:layout_marginRight="42dp"
-        android:background="@drawable/edittext_rounded_corner_rectangle"
-        android:ems="10"
-        android:inputType="date"
-        android:text="모집 기간을 입력해 주세요."
         android:textColor="#29000000" />
 
     <TextView
@@ -240,7 +250,7 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="62dp"
+        android:layout_width="wrap_content"
         android:layout_height="24dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
