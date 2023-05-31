@@ -73,7 +73,7 @@ public class PromotionWrite1 extends AppCompatActivity {
     private void sendDateToServer(String selectedDate) {
         // 레트로핏 인스턴스
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://Cap.jjclub.pe.kr:80") // 서버 주소
+                .baseUrl("http://Cap.jjclub.pe.kr:80/") // 서버 주소
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
