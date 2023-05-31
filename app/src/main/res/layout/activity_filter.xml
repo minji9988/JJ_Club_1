@@ -6,6 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".activities.mainpage.FilterActivity">
 
+    <!--체크박스 표시 없애기
+    android:button="@null"
+    -->
+
     <ImageButton
         android:id="@+id/btn_GoBackHome_fromFilter"
         android:layout_width="28dp"
@@ -40,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-
+    <!--유형-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -89,6 +93,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:background="@drawable/home_round_white_box"/>
 
+    <!--종류-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -245,6 +250,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:background="@drawable/home_round_white_box"/>
 
+    <!--단과대-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
