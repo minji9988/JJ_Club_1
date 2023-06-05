@@ -10,9 +10,9 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="98dp"
-        android:layout_marginTop="52dp"
         android:text="찜 목록 화면"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="43dp"
         android:textColor="#3c3c3c"
         android:textSize="28sp"
         android:textStyle="bold"
@@ -32,8 +32,8 @@
 
         <ImageButton
             android:id="@+id/btn_GoBackProfile_fromLoveIt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="28dp"
+            android:layout_height="24dp"
             android:layout_marginStart="43dp"
             android:layout_marginTop="53dp"
             android:src="@drawable/arrow_left_2"

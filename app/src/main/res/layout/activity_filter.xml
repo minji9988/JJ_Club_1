@@ -8,12 +8,12 @@
 
     <ImageButton
         android:id="@+id/btn_GoBackHome_fromFilter"
-        android:layout_width="0dp"
-        android:layout_height="38dp"
+        android:layout_width="28dp"
+        android:layout_height="24dp"
         android:layout_marginStart="43dp"
         android:layout_marginTop="53dp"
-        android:background="#00000000"
         android:src="@drawable/arrow_left_2"
+        android:background="#00000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,9 +21,9 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="52dp"
         android:text="필터"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="43dp"
         android:textColor="#3c3c3c"
         android:textSize="28sp"
         android:textStyle="bold"
@@ -34,13 +34,11 @@
         android:id="@+id/btn_completion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="33dp"
         android:text="완료"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.986"
-        app:layout_constraintStart_toEndOf="@+id/btn_GoBackHome_fromFilter"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
 
     <TextView
@@ -48,12 +46,10 @@
         android:layout_height="wrap_content"
         android:text="유형"
         android:layout_marginStart="43dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="168dp"
         android:textStyle="bold"
         android:textSize="23sp"
         android:textColor="#3c3c3c"
-        android:lineSpacingExtra="11sp"
-        android:gravity="center_horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
@@ -62,48 +58,329 @@
         android:layout_width="94dp"
         android:layout_height="45dp"
         android:text="스터디"
-
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="157dp" />
+        android:textSize="20dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="228dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
 
     <Button
         android:id="@+id/button2"
         android:layout_width="94dp"
         android:layout_height="45dp"
         android:text="동아리"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="157dp" />
+        android:textSize="20dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="228dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
 
     <Button
         android:id="@+id/button3"
         android:layout_width="94dp"
         android:layout_height="45dp"
         android:text="기타"
-        tools:layout_editor_absoluteX="282dp"
-        tools:layout_editor_absoluteY="157dp" />
+        android:textSize="20dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="228dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="종류"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="318dp"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="#3c3c3c"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_sports"
+        android:text="스포츠"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="378dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
+
+    <Button
+        android:id="@+id/btn_friendly"
+        android:text="친목"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="378dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
+
+    <Button
+        android:id="@+id/btn_trip"
+        android:text="여행"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="378dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
+
+    <Button
+        android:id="@+id/btn_whdry"
+        android:text="종교"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="443dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
+
+    <Button
+        android:id="@+id/btn_qhdtk"
+        android:text="봉사"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="443dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
+
+    <Button
+        android:id="@+id/btn_cnldjq"
+        android:text="취업"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="443dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
+
+    <Button
+        android:id="@+id/btn_game"
+        android:text="게임"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="508dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
+
+    <Button
+        android:id="@+id/btn_ckddjq"
+        android:text="창업"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="508dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
+
+    <Button
+        android:id="@+id/btn_djgkr"
+        android:text="어학"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="508dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
+
+    <Button
+        android:id="@+id/btn_ansghk"
+        android:text="문화/예술/공연"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="573dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
+
+    <Button
+        android:id="@+id/btn_rlxk"
+        android:text="기타"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="258dp"
+        android:layout_marginTop="573dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
+
+    <Button
+        android:id="@+id/btn_rhddP"
+        android:text="공예/만들기"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="638dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="단과대"
         android:layout_marginStart="43dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="729dp"
         android:textStyle="bold"
         android:textSize="23sp"
         android:textColor="#3c3c3c"
-        android:lineSpacingExtra="11sp"
-        android:gravity="center_horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
-        android:text="스포츠 "
+        android:id="@+id/btn_dmlrhkeo"
+        android:text="의과대"
         android:layout_width="94dp"
         android:layout_height="45dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="789dp"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="260dp"/>
+        android:background="@drawable/home_round_white_box"/>
+    <Button
+        android:id="@+id/btn_tkrhkeo"
+        android:text="사과대"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="789dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
+    <Button
+        android:id="@+id/btn_rhdrhkeo"
+        android:text="공과대"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="789dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
+
+    <Button
+        android:id="@+id/btn_dlsanseo"
+        android:text="인문대"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="854dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
+    <Button
+        android:id="@+id/btn_ruddudeo"
+        android:text="경영대"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="854dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
+    <Button
+        android:id="@+id/btn_tkqjaeo"
+        android:text="사범대"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="854dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
+
+    <Button
+        android:id="@+id/btn_ansghkdbdgkq"
+        android:text="문화융합대"
+        android:layout_width="141dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="919dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
+
+    <Button
+        android:id="@+id/btn_ansghkrhksrhkd"
+        android:text="문화관광대"
+        android:layout_width="141dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="919dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
+
+    <Button
+        android:id="@+id/btn_alfodbndgkq"
+        android:text="미래융합대"
+        android:layout_width="141dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="990dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_round_white_box"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <!--
