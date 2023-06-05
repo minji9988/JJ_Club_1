@@ -32,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_completion"
+        android:id="@+id/btn_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
@@ -67,6 +67,7 @@
         android:text="닉네임" />
 
     <EditText
+        android:id="@+id/btn_editTextNickname"
         android:layout_width="344dp"
         android:layout_height="70dp"
         android:layout_marginStart="42dp"
@@ -92,7 +93,7 @@
         android:text="MBTI" />
 
     <EditText
-
+        android:id="@+id/btn_editTextMbti"
         android:layout_width="344dp"
         android:layout_height="70dp"
         android:layout_marginStart="42dp"
@@ -117,7 +118,7 @@
         android:text="비밀번호" />
 
     <EditText
-
+        android:id="@+id/btn_editTextPassword"
         android:layout_width="344dp"
         android:layout_height="70dp"
         android:layout_marginStart="40dp"

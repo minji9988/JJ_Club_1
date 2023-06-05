@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:paddingBottom="30dp"
     >
-activity_home_posts_item.xml
+<!--activity_home_posts_item.xml-->
 
         <!-- 흰색 네모 배경 ImageButton -->
         <View

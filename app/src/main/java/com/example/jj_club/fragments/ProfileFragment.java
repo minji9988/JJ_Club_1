@@ -22,6 +22,25 @@ import com.example.jj_club.activities.Profile.ProfileRecivedapplicationformActiv
 import com.example.jj_club.activities.Profile.ProfileSendapplicationformActivity;
 import com.example.jj_club.activities.Profile.ProfileWirtepostActivity;
 import com.example.jj_club.activities.register.MainActivity;
+import com.example.jj_club.models.request.WithdrawalRequest;
+import com.example.jj_club.models.response.WithdrawalResponse;
+import com.example.jj_club.network.interface_folder.WithdrawalInterface;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+import com.example.jj_club.network.RetrofitClient;
+
 ////////////////////프로필 페이지///////////////////
 
 /**
@@ -49,7 +68,13 @@ class ProfileFragment extends Fragment {
 
     private TextView text_loveIt, text_writePost, text_sendApplicationForm, text_receivedApplicationForm;
 
+    //로그아웃, 회원탈퇴 텍스트
     private TextView text_signout, text_membershipWithdrawal;
+
+    //회원탈퇴
+    private WithdrawalInterface withdrawalInterface;
+    private String accessToken;
+    private String userId;
 
     public
     ProfileFragment () {
@@ -103,7 +128,6 @@ class ProfileFragment extends Fragment {
 
         text_signout = (TextView) view.findViewById(R.id.text_signout);
         text_membershipWithdrawal = (TextView) view.findViewById(R.id.text_membershipWithdrawal);
-
 
         btn_profileEdit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -218,6 +242,42 @@ class ProfileFragment extends Fragment {
             }
         });
 
+        
+        //회원탈퇴 텍스트 눌렀을때
+        text_membershipWithdrawal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                WithdrawalRequest request = new WithdrawalRequest(userId);
+                WithdrawalInterface withdrawl = RetrofitClient.getClient().create(WithdrawalInterface.class);
+
+                // Check if user is logged in
+                // Send withdrawal request to the server
+                WithdrawalRequest withdrawalRequest = new WithdrawalRequest(userId);
+                Call<WithdrawalResponse> call = withdrawl.withdrawUser(accessToken, withdrawalRequest);
+                //Call<WithdrawalResponse> call = WithdrawalInterface.withdrawl(accessToken, withdrawalRequest);
+                call.enqueue(new Callback<WithdrawalResponse>() {
+                    @Override
+                    public void onResponse(Call<WithdrawalResponse> call, Response<WithdrawalResponse> response) {
+                        if (response.isSuccessful()) {
+                            WithdrawalResponse withdrawalResponse = response.body();
+                            String message = withdrawalResponse.getMessage();
+                            // Display withdrawal completion message
+                            Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
+                            // Perform any additional actions after successful withdrawal
+                        } else {
+                            Toast.makeText(getActivity(), "Failed to fetch posts", Toast.LENGTH_SHORT).show();
+                            // Handle error response
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<WithdrawalResponse> call, Throwable t) {
+                        // Handle failure case
+                    }
+                });
+            }
+        });
         // Inflate the layout for this fragment
         return view; //inflater.inflate(R.layout.fragment_profile, container, false);
     }
