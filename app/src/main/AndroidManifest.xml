@@ -88,6 +88,7 @@
             android:name=".activities.register.MainActivity"
             android:exported="true" />
 
+
         <activity
             android:name=".activities.mainpage.MainPageActivity"
             android:exported="true">

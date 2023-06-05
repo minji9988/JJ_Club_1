@@ -1,6 +1,6 @@
 package com.example.jj_club.models.response;
 
-// 서버로부터 받은 데이터를 정의해 준다.
+// 서버로부터 받을 데이터를 정의해 준다.
 
 
 public class LoginResponse {
@@ -38,14 +38,3 @@ public class LoginResponse {
         }
     }
 }
-
-
-//
-//public class LoginResponse {
-//    @SerializedName("success")
-//    private boolean success;
-//
-//    public boolean isSuccess() {
-//        return success;
-//    }
-//}
