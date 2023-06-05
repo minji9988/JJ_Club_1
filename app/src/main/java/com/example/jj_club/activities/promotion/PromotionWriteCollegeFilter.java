@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.jj_club.R;
 
-public class PromotionWrite4 extends AppCompatActivity {
+public class PromotionWriteCollegeFilter extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_promotion_write4);
+        setContentView(R.layout.activity_promotion_write_college_filter);
     }
 }

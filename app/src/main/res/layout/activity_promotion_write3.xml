@@ -1,75 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.promotion.PromotionWrite3">
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginTop="760dp"
-        android:layout_marginLeft="57dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="55dp"
         android:lineSpacingExtra="8sp"
-        android:fontFamily="@font/fontregular"
-        android:includeFontPadding="false"
-        android:text="모집 기간"
+        android:text="모임 필터"
         android:textColor="#707070"
         android:textSize="16sp" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="30dp"
-        android:layout_height="24dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="617dp"
-        android:layout_marginLeft="57dp"
-        android:lineSpacingExtra="8sp"
-        android:fontFamily="@font/fontregular"
-        android:includeFontPadding="false"
-        android:text="회비"
-        android:textColor="#707070"
-        android:textSize="16sp" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="30dp"
-        android:layout_height="24dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="474dp"
-        android:layout_marginLeft="57dp"
-        android:lineSpacingExtra="8sp"
-        android:fontFamily="@font/fontregular"
-        android:includeFontPadding="false"
-        android:text="면접"
-        android:textColor="#707070"
-        android:textSize="16sp" />
-
-    <View
-        android:id="@+id/view8"
-        android:layout_width="3dp"
-        android:layout_height="20dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="763dp"
-        android:layout_marginLeft="42dp"
-        android:background="@drawable/btn_round_blue_box"></View>
-
-    <View
-        android:id="@+id/view7"
-        android:layout_width="3dp"
-        android:layout_height="20dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="620dp"
-        android:layout_marginLeft="42dp"
-        android:background="@drawable/btn_round_blue_box"></View>
 
     <ImageView
         android:id="@+id/imageView"
@@ -78,7 +25,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_marginTop="53dp"
-        android:layout_marginLeft="43dp"
+        android:layout_marginLeft="23dp"
         android:background="#00000000"
         android:src="@drawable/arrow_left"></ImageView>
 
@@ -90,7 +37,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginTop="43dp"
         android:layout_marginLeft="89dp"
-        android:fontFamily="@font/fontbold"
+        android:fontFamily="@font/notosanskrbold"
         android:includeFontPadding="false"
         android:gravity="center_horizontal"
         android:lineSpacingExtra="12sp"
@@ -99,7 +46,7 @@
         android:textSize="28sp" />
 
     <android.widget.Button
-        android:id="@+id/button_next"
+        android:id="@+id/button_finish"
         android:layout_width="77dp"
         android:layout_height="48dp"
         android:layout_alignParentTop="true"
@@ -107,24 +54,37 @@
         android:layout_marginTop="42dp"
         android:layout_marginRight="33dp"
         android:background="@drawable/btn_round_blue_box"
-        android:text="다음"
-        android:fontFamily="@font/fontmedium"
+        android:text="완료"
         android:textColor="#ffffff"
-        android:textSize="15sp" />
+        android:textSize="18sp" />
 
     <android.widget.Button
-        android:id="@+id/button_next4"
+        android:id="@+id/button_next2"
         android:layout_width="344dp"
         android:layout_height="70dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="803dp"
+        android:layout_marginTop="618dp"
         android:layout_marginLeft="42dp"
         android:layout_marginRight="42dp"
         android:background="@drawable/btn_round_blue_box"
-        android:text="모집 기간을 선택해 주세요."
-        android:fontFamily="@font/fontregular"
+        android:text="모임 필터 선택하기"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <android.widget.Button
+        android:id="@+id/button_next3"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="776dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:background="@drawable/btn_round_blue_box"
+        android:text="모임 필터 선택하기"
         android:textColor="#ffffff"
         android:textSize="18sp" />
 
@@ -134,9 +94,9 @@
         android:layout_height="20dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginTop="477dp"
+        android:layout_marginTop="153dp"
         android:layout_marginLeft="42dp"
-        android:background="@drawable/btn_round_blue_box"></View>
+        android:background="@drawable/round_gray_box"></View>
 
     <View
         android:id="@+id/view"
@@ -144,9 +104,9 @@
         android:layout_height="20dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginTop="287dp"
+        android:layout_marginTop="357dp"
         android:layout_marginLeft="42dp"
-        android:background="@drawable/btn_round_blue_box"></View>
+        android:background="@drawable/round_gray_box"></View>
 
     <View
         android:id="@+id/view6"
@@ -154,73 +114,23 @@
         android:layout_height="20dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginTop="153dp"
+        android:layout_marginTop="513dp"
         android:layout_marginLeft="42dp"
         android:background="@drawable/btn_round_blue_box"></View>
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/pwplace"
         android:layout_width="344dp"
         android:layout_height="70dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="388dp"
         android:layout_marginLeft="42dp"
         android:layout_marginRight="42dp"
         android:background="@drawable/edittext_rounded_corner_rectangle"
         android:ems="10"
-        android:inputType="text"
-        android:text="  동아리 이름을 입력해 주세요."
-        android:textColor="#29000000" />
-
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="344dp"
-        android:layout_height="122dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="322dp"
-        android:layout_marginLeft="42dp"
-        android:layout_marginRight="42dp"
-        android:background="@drawable/edittext_rounded_corner_rectangle"
-        android:ems="10"
-        android:gravity="top"
-        android:inputType="textMultiLine"
-        android:text="\n  동아리를 한줄로 소개해 주세요."
-        android:textColor="#29000000" />
-
-    <EditText
-        android:id="@+id/editTextText3"
-        android:layout_width="344dp"
-        android:layout_height="70dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="517dp"
-        android:layout_marginLeft="42dp"
-        android:layout_marginRight="42dp"
-        android:background="@drawable/edittext_rounded_corner_rectangle"
-        android:ems="10"
-        android:inputType="text"
-        android:text="  면접 유무를 입력해 주세요."
-        android:textColor="#29000000" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="344dp"
-        android:layout_height="70dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="660dp"
-        android:layout_marginLeft="42dp"
-        android:layout_marginRight="42dp"
-        android:background="@drawable/edittext_rounded_corner_rectangle"
-        android:ems="10"
-        android:inputType="text"
-        android:text="  동아리 회비를 입력해 주세요."
+        android:text=" 모임 장소가 있다면 장소를 입력해 주세요."
         android:textColor="#29000000" />
 
     <TextView
@@ -232,11 +142,9 @@
         android:layout_marginTop="149dp"
         android:layout_marginLeft="55dp"
         android:lineSpacingExtra="8sp"
-        android:fontFamily="@font/fontregular"
-        android:includeFontPadding="false"
-        android:text="동아리 이름"
+        android:text="모임 이미지/활동 사진"
         android:textColor="#707070"
-        android:textSize="16sp"/>
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView4"
@@ -244,13 +152,83 @@
         android:layout_height="24dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginTop="284dp"
-        android:layout_marginLeft="57dp"
+        android:layout_marginTop="353dp"
+        android:layout_marginLeft="55dp"
         android:lineSpacingExtra="8sp"
-        android:fontFamily="@font/fontregular"
-        android:includeFontPadding="false"
-        android:text="한 줄 소개"
+        android:text="모임 장소"
         android:textColor="#707070"
         android:textSize="16sp" />
+
+    <android.widget.Button
+        android:id="@+id/imageButton1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="194dp"
+        android:layout_marginLeft="45dp"
+        android:background="@drawable/gray_rectangle"
+        android:drawableTop="@drawable/camera_icon"
+        android:scaleType="centerInside"
+        android:text="대표 사진"
+        android:textColor="#676767" />
+
+    <android.widget.Button
+        android:id="@+id/imageButton2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="194dp"
+        android:layout_marginLeft="171dp"
+        android:background="@drawable/gray_rectangle"
+        android:drawableTop="@drawable/camera_icon"
+        android:scaleType="centerInside"
+        android:text="일반 사진"
+        android:textColor="#676767" />
+
+    <android.widget.Button
+        android:id="@+id/imageButton3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="194dp"
+        android:layout_marginLeft="297dp"
+        android:background="@drawable/gray_rectangle"
+        android:drawableTop="@drawable/camera_icon"
+        android:scaleType="centerInside"
+        android:text="일반 사진"
+        android:textColor="#676767" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="227dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="570dp"
+        android:layout_marginLeft="42dp"
+        android:fontFamily="@font/notosanskrmedium"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="8sp"
+        android:text="일반 스터디/동아리 모임인 경우"
+        android:textSize="17sp"
+        android:textColor="#3c3c3c" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="137dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="730dp"
+        android:layout_marginLeft="42dp"
+        android:fontFamily="@font/notosanskrmedium"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="8sp"
+        android:textSize="17sp"
+        android:text="단과대 모임인 경우"
+        android:textColor="#3c3c3c" />
 
 </RelativeLayout>

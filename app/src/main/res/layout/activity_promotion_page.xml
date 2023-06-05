@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.promotion.PromotionPage">
@@ -60,13 +64,12 @@
         app:tabIndicatorColor="@null"
         app:tabSelectedTextColor="#3c3c3c"
         app:tabTextColor="#939393"
-        app:tabTextAppearance="@style/tab_font"
-        >
+        app:tabTextAppearance="@style/tab_font">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="정보"/>
+            android:text="정보" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
@@ -80,4 +83,105 @@
 
     </com.google.android.material.tabs.TabLayout>
 
+    <!-- Content for TabItem "정보" -->
+    <FrameLayout
+        android:id="@+id/tab_content_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/information_tap">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/inside_information_tap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="228dp"
+            android:layout_gravity="center_horizontal"
+            app:tabIndicatorColor="@null"
+            app:tabSelectedTextColor="#3c3c3c"
+            app:tabTextAppearance="@style/tab_font_2"
+            app:tabTextColor="#939393">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="소개" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="게시판" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="캘린더" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="채팅" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <!-- Content for TabItem "정보" -->
+        <FrameLayout
+            android:id="@+id/tab_content_intro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/information_tap">
+
+
+            <!-- Add your information content views here -->
+
+            <FrameLayout
+                android:id="@+id/tab_content_chat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/information_tap">
+
+                <!-- Add your Q&A content views here -->
+
+            </FrameLayout>
+        </FrameLayout>
+
+        <!-- Content for TabItem "후기" -->
+        <FrameLayout
+            android:id="@+id/tab_content_board"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/information_tap">
+
+            <!-- Add your reviews content views here -->
+
+        </FrameLayout>
+
+        <!-- Content for TabItem "Q&A" -->
+        <!-- Add your information content views here -->
+
+    </FrameLayout>
+
+    <!-- Content for TabItem "후기" -->
+    <FrameLayout
+        android:id="@+id/tab_content_reviews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/information_tap">
+
+        <!-- Add your reviews content views here -->
+
+    </FrameLayout>
+
+    <!-- Content for TabItem "Q&A" -->
+    <FrameLayout
+        android:id="@+id/tab_content_qa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/information_tap">
+
+        <!-- Add your Q&A content views here -->
+
+    </FrameLayout>
+
 </RelativeLayout>
+</ScrollView>

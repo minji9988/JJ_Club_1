@@ -14,7 +14,7 @@ import retrofit2.http.POST;
 * @Field 애너테이션의 값은 요청에 필요한 필드 이름으로 변경되어야 합니다.
 * */
 
-// ApiService 파일에 대한 설명
+// PromotionWriteInterface 파일에 대한 설명
 // - 서버와 통신하기 위한 API 인터페이스 파일
 // - 서버의 엔드포인트와 통신을 정의
 

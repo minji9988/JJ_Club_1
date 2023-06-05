@@ -3,7 +3,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /*
-======Retrfit API 파일(ApiService)과 Retrofit Client 파일의 차이========
+======Retrfit API 파일(PromotionWriteInterface)과 Retrofit Client 파일의 차이========
 - Retrofit API 인터페이스 파일은 서버의 엔드포인트와 통신을 정의하고,
 - 클라이언트 파일은 Retrofit을 초기화하고 설정하여 실제 통신을 수행합니다.
 */
