@@ -1,7 +1,6 @@
 package com.example.jj_club.network;
 
 
-// PromotionWriteInterface 파일에 대한 설명
 // - 서버와 통신하기 위한 API 인터페이스 파일
 // - 서버의 엔드포인트와 통신을 정의
 
